@@ -1,0 +1,38 @@
+.riskList li {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.riskList .RowText {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.yAxisLabel {
+    vertical-align: middle;
+	text-align: center;
+}
+
+.xAxisLabel {
+    width: 20%;
+    text-align: center;
+}
+
+.matrixBox {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+}

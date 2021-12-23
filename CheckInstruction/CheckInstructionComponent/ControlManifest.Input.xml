@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="UR" constructor="CheckInstructionComponent" version="0.0.1" display-name-key="UR_CheckInstructionComponent" description-key="UR_CheckInstructionComponent_Description" control-type="standard">
+     <type-group name="flds">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Ticker</type>
+      <type>TwoOptions</type>
+      <type>Whole.None</type>
+      <type>Currency</type>
+      <type>FP</type>
+      <type>Decimal</type>
+    </type-group>
+    <property name="Attribute" display-name-key="UR_AttributeDisplayKey" description-key="UR_AttributeDescriptionKey" of-type-group="flds" usage="bound" required="true" />
+   <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/CheckInstructionComponent.css" order="1" />
+      <resx path="strings/CheckInstructionComponent.1033.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+
+  </control>
+</manifest>

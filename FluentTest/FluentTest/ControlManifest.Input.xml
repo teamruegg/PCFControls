@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="UR" constructor="FluentTest" version="0.0.1" display-name-key="FluentTest" description-key="FluentTest description" control-type="standard">
+     <type-group name="flds">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Ticker</type>
+      <type>TwoOptions</type>
+      <type>Whole.None</type>
+      <type>Currency</type>
+      <type>FP</type>
+      <type>Decimal</type>
+    </type-group>
+    <property name="Attribute" display-name-key="UR_AttributeDisplayKey" description-key="UR_AttributeDescriptionKey" of-type-group="flds" usage="bound" required="true" />
+    <resources>
+      <css path="css/FluentTest.css" order="1" />
+      <code path="index.ts" order="2"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <resx path="strings/Test.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

@@ -1,0 +1,18 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+  <entity name="ur_fiveschecklist">
+    <attribute name="ur_fiveschecklistid" />
+    <attribute name="ur_name" />
+    <attribute name="ur_fivesassessment" />
+    <attribute name="ur_fivescategory" />
+    <attribute name="ur_fivescategoryname" />
+    <attribute name="ur_level1iscompleted" />
+    <attribute name="ur_level2iscompleted" />
+    <attribute name="ur_level3iscompleted" />
+    <attribute name="ur_level4iscompleted" />
+    <attribute name="ur_level5iscompleted" />
+    <attribute name="ur_completionscore" />
+    <filter>
+      <condition attribute="ur_fiveschecklistid" operator="eq" value="74a2596c-eb36-eb11-a813-000d3a8c5bbe" />
+    </filter>
+  </entity>
+</fetch>

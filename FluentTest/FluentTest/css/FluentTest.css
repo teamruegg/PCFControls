@@ -1,0 +1,16 @@
+
+/* @import '@fluentui/react/dist/sass/References'; */
+
+.overviewPane {
+    box-shadow: ms-depth-shadow-8;
+    font-style: ms-fontWeight-regular;
+  }
+
+.overviewHeader {
+    font-style: ms-fontWeight-bold;
+}
+
+.siteTextStyles {
+    color: '#025F52';
+    font-weight: semibold;
+}

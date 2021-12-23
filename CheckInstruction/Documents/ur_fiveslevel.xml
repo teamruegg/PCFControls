@@ -1,0 +1,20 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+  <entity name="ur_fiveslevel">
+    <attribute name="ur_fiveslevelid" />
+    <attribute name="ur_description" />
+    <attribute name="ur_levelchoice" />
+    <attribute name="ur_factor" />
+    <order attribute="ur_levelchoice" descending="false" />
+    <filter type="and">
+      <condition attribute="statecode" operator="eq" value="0" />
+    </filter>
+    <link-entity name="ur_fivescategory" from="ur_fivescategoryid" to="ur_fivescategory" link-type="inner" alias="ag">
+      <attribute name="ur_fivesprincipal" />
+      <link-entity name="ur_fiveschecklist" from="ur_fivescategory" to="ur_fivescategoryid" link-type="inner" alias="ai">
+        <filter type="and">
+          <condition attribute="ur_fiveschecklistid" operator="eq" value="74a2596c-eb36-eb11-a813-000d3a8c5bbe" />
+        </filter>
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>
